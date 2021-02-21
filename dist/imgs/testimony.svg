@@ -1,0 +1,21 @@
+<svg width="1888" height="1297" viewBox="0 0 1888 1297" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="testimony section 1" clip-path="url(#clip0)">
+<g id="Group 21">
+<path id="Path 65" d="M5.28748 240.925C5.28748 240.925 5.28748 -55.2801 324.992 15.0985C557.5 66.2821 387.394 349.411 720.201 260.852C1053.01 172.292 966.836 683.725 1151.07 260.852C1335.3 -162.021 1596.79 267.492 1662.17 207.716C1727.54 147.939 1888 260.852 1888 260.852V729V1198.5L5.28748 1297V240.925Z" fill="url(#paint0_linear)"/>
+<path id="Path 135" d="M1888 1192V1297H4L1888 1192Z" fill="#8B4D78"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear" x1="944" y1="-0.000366916" x2="944" y2="984.423" gradientUnits="userSpaceOnUse">
+<stop stop-color="#E09947"/>
+<stop offset="0.047" stop-color="#BD795C"/>
+<stop offset="0.276" stop-color="#C98455"/>
+<stop offset="0.328" stop-color="#BF7A5B"/>
+<stop offset="0.351" stop-color="#C37E59"/>
+<stop offset="1" stop-color="#8B4D78"/>
+</linearGradient>
+<clipPath id="clip0">
+<rect width="1888" height="1297" fill="white"/>
+</clipPath>
+</defs>
+</svg>

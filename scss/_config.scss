@@ -1,0 +1,45 @@
+
+$purple: #8b4d79;
+$orange: #eba342;
+@mixin pad {
+    padding: 0px 100px;
+}
+
+@mixin highlight {
+    border: 2px solid none;
+    text-transform: uppercase;
+    color: white;
+    background-color: lighten($purple, 5%);
+    border-radius: 100px;
+    font-weight: bold;
+}
+
+@mixin text-font {
+    font-size: 20px;
+}
+
+@mixin transition-ease {
+    transition: all 0.5s ease;
+}
+
+@mixin header {
+    // color: white;
+    // border: 2px solid red;
+    width: max-content;
+    font-size: 30px;
+    margin-bottom: 20px;
+
+    .header__underline {
+        border: 1px solid grey;
+        width: 80px;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+
+
+
+
