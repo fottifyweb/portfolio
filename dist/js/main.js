@@ -1,89 +1,73 @@
-const menu = document.querySelector('.ham-menu'); 
-const nav = document.querySelector('.mobile-nav');
-const dashes = document.querySelectorAll('.dash');
-console.log(dashes);
+import { navToggle, toggleContent } from "./mobile-header.js";
 
-menu.addEventListener('click', () => {
+const menu = document.querySelector(".ham-menu");
+const ourServices = document.querySelector(".our-services-content");
+const categoriesContent = document.querySelectorAll(".categories-content");
 
-let navOpen = menu.classList.contains('nav-open')
+menu.addEventListener("click", navToggle);
 
-if (!navOpen) {
-    nav.style.top = '0'
-    nav.style.marginBottom = '0'
-    menu.classList.remove('nav-close')
-    menu.classList.add('nav-open')
-    dashes[0].style.transform = 'rotate(34deg)'
-    dashes[1].style.display = 'none'
-    dashes[2].style.transform = 'rotate(-34deg)'
+ourServices.addEventListener("click", () => {
+	const categories = document.querySelector(".categories");
 
-} 
+	toggleContent(ourServices, categories);
+});
 
-if (navOpen) {
-    nav.style.top = '-100px'
-    nav.style.marginBottom = '-100px'
-    menu.classList.add('nav-close')
-    menu.classList.remove('nav-open')
-    dashes[0].style.transform = 'rotate(0deg)'
-    dashes[1].style.display = 'block'
-    dashes[2].style.transform = 'rotate(-0deg)'
+categoriesContent.forEach((el) => {
+	el.addEventListener("click", (e) => {
+		let target = e.target;
+		if (e.target.tagName === "I") target = e.target.parentElement;
+		const subCategories = target.nextElementSibling;
 
-}
-
-})
-
+		toggleContent(el, subCategories);
+	});
+});
 
 // **********************************
 // ISMAIL's SHIT
 // **********************************
 
-const category__item = document.querySelectorAll('.category__item');
+const category__item = document.querySelectorAll(".category__item");
 
-category__item.forEach(function(e) {
-    e.addEventListener('mouseenter', showCatList, {once: true})
+category__item.forEach(function (e) {
+	e.addEventListener("mouseenter", showCatList, {
+		once: true
+	});
 });
 
 function showCatList(e) {
-    let service_list = e.target.nextElementSibling;
-    let category = e.target.parentElement;
-    service_list.classList.add('show');
-    category.addEventListener('mouseleave', (e) => {
-        hideCatList(e, category)}, {once: true}
-    )
+	let service_list = e.target.nextElementSibling;
+	let category = e.target.parentElement;
+	service_list.classList.add("show");
+	category.addEventListener(
+		"mouseleave",
+		(e) => {
+			hideCatList(e, category);
+		},
+		{ once: true }
+	);
 }
 
 function hideCatList(e, category) {
-    category.children[0].addEventListener('mouseenter', showCatList, {once: true})
-    category.children[1].classList.remove('show')
+	category.children[0].addEventListener("mouseenter", showCatList, { once: true });
+	category.children[1].classList.remove("show");
 }
-
 
 // *********** FAQ SECTION **************** //
 
 let reveal_sign = document.querySelectorAll(".reveal-sign");
 
 function revealAnswer(e) {
-    let answer = e.target.parentElement.nextElementSibling;
-    console.log(e.innerHTML);
-    answer.classList.toggle('reveal');
-    if (answer.classList.contains('reveal')) {
-        e.innerHTML = "-";
-    } else {
-        e.innerHTML = "+";
-    }
+	let answer = e.target.parentElement.nextElementSibling;
+	console.log(e.innerHTML);
+	answer.classList.toggle("reveal");
+	if (answer.classList.contains("reveal")) {
+		e.innerHTML = "-";
+	} else {
+		e.innerHTML = "+";
+	}
 }
 
-reveal_sign.forEach(function(e) {
-    console.log(e);
-    e.addEventListener('click', revealAnswer)
+reveal_sign.forEach(function (e) {
+	console.log(e);
+	e.addEventListener("click", revealAnswer);
 });
-
-
-
-
-
-
-
-
-
-
-
