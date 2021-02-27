@@ -24,7 +24,6 @@ body {
   overflow-y: scroll;
   z-index: 100;
 }
-
 main {
   width: 100%;
 }
@@ -35,7 +34,6 @@ main {
   height: 20px;
   width: 30px;
 }
-
 .ham-menu:hover {
   cursor: pointer;
 }
@@ -77,34 +75,28 @@ main {
   z-index: 25;
   opacity: 0;
 }
-
-.mobile-nav .our-services-content,
-.mobile-nav > a {
+.mobile-nav .our-services-content, .mobile-nav > a {
   padding: 15px;
   border-bottom: 1px solid #8b4d79;
   font-weight: bold;
 }
-
 .mobile-nav .our-services,
 .mobile-nav .category,
 .mobile-nav .categories {
   display: flex;
   flex-direction: column;
 }
-
 .mobile-nav .sub-categories,
 .mobile-nav .categories {
   height: 0;
   overflow: hidden;
   transition: height 0.3s ease-in;
 }
-
 .mobile-nav .our-services-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .mobile-nav .categories-content {
   display: flex;
   justify-content: space-between;
@@ -115,11 +107,9 @@ main {
   background-color: #ffd7ff;
   border-bottom: 1px solid #8b4d79;
 }
-
 .mobile-nav i {
   transition: transform 0.2s ease-in;
 }
-
 .mobile-nav .sub-category {
   display: flex;
   justify-content: space-between;
@@ -129,12 +119,10 @@ main {
   background-color: #f7b0f7;
   border-bottom: 1px solid #8b4d79;
 }
-
 .mobile-nav .opened-icon > i {
   transform-origin: center;
   transform: rotate(90deg);
 }
-
 .mobile-nav button {
   width: 80%;
   padding: 15px 0;
@@ -187,18 +175,15 @@ header.main-header {
   z-index: 2;
   height: 100%;
 }
-
 #main__logo img {
   margin-right: 5px;
   width: 35%;
 }
-
 #main__logo div.texts h1 {
   text-transform: uppercase;
   letter-spacing: 0.775rem;
   font-size: 16px;
 }
-
 #main__logo div.texts h5 {
   font-weight: 400;
 }
@@ -212,11 +197,9 @@ header.main-header {
   font-size: 105%;
   margin-right: 2rem;
 }
-
 #nav ul li {
   padding: 4px 12px;
 }
-
 #nav ul li.active {
   border: none;
   border-radius: 30px;
@@ -224,7 +207,6 @@ header.main-header {
   color: white;
   box-shadow: 0.25px 0.25px 5px 0.25px rgba(128, 128, 128, 0.527);
 }
-
 #nav ul li:nth-last-child(1) {
   border: none;
   color: white;
@@ -243,12 +225,10 @@ header.main-header {
   padding: 0 10%;
   margin: 0 auto;
 }
-
 #header__services li {
   padding: 5px 0px;
   cursor: pointer;
 }
-
 #header__services div.category {
   display: flex;
   flex-direction: column;
@@ -272,24 +252,19 @@ div.service_dropdown {
   transition: all 0.5s ease-out;
   line-height: 30px;
 }
-
 div.service_dropdown.show {
   transition: all 0.5s ease-out;
   height: 200px;
 }
-
 div.service_dropdown.show#g_and_a {
   height: 200px;
 }
-
 div.service_dropdown.show#vid_and_anim {
   height: 80px;
 }
-
 div.service_dropdown.show#prog_and_tech {
   height: 200px;
 }
-
 div.service_dropdown a {
   display: flex;
   flex-direction: column;
@@ -300,7 +275,6 @@ div.service_dropdown a {
   padding: 5px 10px;
   cursor: pointer;
 }
-
 div.service_dropdown a:hover {
   background-color: #dfc5d7;
 }
@@ -311,7 +285,6 @@ footer {
   color: white;
   width: 100%;
 }
-
 footer p {
   text-align: center;
   padding: 15px 0;
@@ -328,7 +301,6 @@ div#newsletter h3 {
   text-align: center;
   margin-bottom: 10px;
 }
-
 div#newsletter form {
   border-radius: 5px;
   display: flex;
@@ -337,7 +309,6 @@ div#newsletter form {
   align-items: center;
   gap: 10px;
 }
-
 div#newsletter form input {
   height: 40px;
   width: 350px;
@@ -346,7 +317,6 @@ div#newsletter form input {
   border: none;
   border-radius: 7px;
 }
-
 div#newsletter form button {
   width: contain;
   font-size: 16px;
@@ -362,19 +332,16 @@ div#social__media {
   margin: 30px auto 10px;
   width: fit-content;
 }
-
 div#social__media h3 {
   margin-bottom: 10px;
   font-size: 110%;
 }
-
 div#social__media ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
 }
-
 div#social__media ul li {
   border: none;
   color: rgba(6, 65, 173, 0.836);
@@ -383,7 +350,6 @@ div#social__media ul li {
   border-radius: 5px;
   transition: ease 0.25s;
 }
-
 div#social__media ul li:hover {
   box-shadow: 0.2px 0.2px 5px 3px #6a3b5c;
   transform: scale(1.1) rotate(360deg);
@@ -395,9 +361,11 @@ div#social__media ul li:hover {
     height: 60px;
     padding-top: 3px;
   }
+
   #header__services {
     gap: 12%;
   }
+
   #main__logo {
     transform-origin: left;
     transform: scale(0.75);
@@ -410,6 +378,7 @@ div#social__media ul li:hover {
   #main__logo div.texts h1 {
     font-size: 16px;
   }
+
   #nav ul {
     font-size: 85%;
     margin-right: 1rem;
@@ -417,15 +386,16 @@ div#social__media ul li:hover {
   #nav ul li {
     padding: 4px 9px;
   }
+
   div#newsletter {
     margin: 0 12vw;
   }
 }
-
 @media (max-width: 780px) {
   #header__content {
     height: 60px;
   }
+
   #main__logo {
     margin-left: 1rem;
   }
@@ -439,6 +409,7 @@ div#social__media ul li:hover {
   #main__logo div.texts h5 {
     font-size: 12.5px;
   }
+
   #nav ul {
     font-size: 75%;
     margin-right: 0.5rem;
@@ -446,10 +417,12 @@ div#social__media ul li:hover {
   #nav ul li {
     padding: 4px 7px;
   }
+
   #header__services {
     gap: 8%;
     font-size: 14px;
   }
+
   div#newsletter {
     margin: 0 7vw;
   }
@@ -466,32 +439,35 @@ div#social__media ul li:hover {
   div#newsletter form button {
     font-size: 14px;
   }
+
   div#social__media h3 {
     margin-bottom: 5px;
     font-size: 90%;
   }
 }
-
 @media (max-width: 601px) {
   #header__content {
     padding: 0px 15px;
     height: max-content;
   }
+
   #header__services,
-  #nav {
+#nav {
     display: none;
   }
+
   .ham-menu {
     display: flex;
   }
+
   #main__logo {
     margin-left: 0;
   }
+
   .mobile-nav {
     display: flex;
   }
 }
-
 .image-video-preview {
   display: flex;
   opacity: 0;
@@ -505,12 +481,10 @@ div#social__media ul li:hover {
   z-index: 10;
   transition: height 0.3s, width 0.3s, bottom 0.3s, left 0.3s ease;
 }
-
 .image-video-preview img {
   height: 600vh;
   width: auto;
 }
-
 @media only screen and (max-width: 600px) {
   .image-video-preview img {
     max-height: 60vh;
@@ -519,7 +493,6 @@ div#social__media ul li:hover {
     height: auto;
   }
 }
-
 .image-video-preview iframe {
   display: none;
 }
@@ -544,14 +517,12 @@ div#social__media ul li:hover {
   margin-left: 50px;
   width: 40%;
 }
-
 @media only screen and (max-width: 800px) {
   .intro-text {
     width: 90%;
     margin: 20px;
   }
 }
-
 @media only screen and (max-width: 500px) {
   .intro-text {
     font-size: 0.8rem;
@@ -570,7 +541,6 @@ div#social__media ul li:hover {
   padding: 10px 20px;
   text-transform: uppercase;
 }
-
 @media only screen and (max-width: 600px) {
   .section-header {
     font-size: 0.7rem;
@@ -582,31 +552,27 @@ div#social__media ul li:hover {
 .programming-tech {
   margin-bottom: 30px;
 }
-
 .graphics-design > div,
 .video-animation > div,
 .programming-tech > div {
   margin-left: 8vw;
 }
-
 @media only screen and (max-width: 600px) {
   .graphics-design > div,
-  .video-animation > div,
-  .programming-tech > div {
+.video-animation > div,
+.programming-tech > div {
     margin-left: 12vw;
   }
 }
-
 .graphics-design > section,
 .video-animation > section,
 .programming-tech > section {
   margin-left: 5vw;
 }
-
 @media only screen and (max-width: 600px) {
   .graphics-design > section,
-  .video-animation > section,
-  .programming-tech > section {
+.video-animation > section,
+.programming-tech > section {
     margin-left: 8vw;
   }
 }
@@ -618,7 +584,6 @@ div#social__media ul li:hover {
   color: dimgray;
   font-weight: bold;
 }
-
 @media only screen and (max-width: 600px) {
   .sub-section-header {
     font-size: 0.7rem;
@@ -631,11 +596,9 @@ div#social__media ul li:hover {
   margin-left: 3vw;
   margin-bottom: 50px;
 }
-
 .works > div:nth-child(2n) {
   margin-top: 50%;
 }
-
 @media only screen and (max-width: 600px) {
   .works {
     grid-template-columns: repeat(2, 1fr);
@@ -682,7 +645,6 @@ div#social__media ul li:hover {
   border-radius: 5%;
   margin: 0;
 }
-
 @media only screen and (max-width: 600px) {
   .work-img {
     width: 30vw;
@@ -697,7 +659,6 @@ div#social__media ul li:hover {
 .graphics-design .work:hover::after {
   opacity: 1;
 }
-
 .graphics-design .work::after {
   opacity: 0;
   display: flex;
@@ -718,13 +679,11 @@ div#social__media ul li:hover {
 .video-animation .section-header {
   margin-bottom: 50px;
 }
-
 .video-animation .work-img {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 .video-animation .work-img i {
   position: absolute;
   opacity: 0.9;
@@ -732,11 +691,9 @@ div#social__media ul li:hover {
   font-size: 6vw;
   transition: all 0.2s ease;
 }
-
 .video-animation .work-img:hover {
   cursor: pointer;
 }
-
 .video-animation .work-img:hover i {
   opacity: 0.9;
   transform: scale(1.5);
@@ -745,11 +702,9 @@ div#social__media ul li:hover {
 .programming-tech .section-header {
   margin-bottom: 50px;
 }
-
 .programming-tech .work-img {
   margin: 0 0 5px 0;
 }
-
 .programming-tech a {
   display: flex;
   align-items: flex-start;
@@ -757,17 +712,14 @@ div#social__media ul li:hover {
   text-decoration: none;
   font-size: 16px;
 }
-
 .programming-tech a img {
   width: 15px;
   height: 15px;
   margin-right: 5px;
 }
-
 .programming-tech a:hover {
   text-decoration: underline;
 }
-
 @media only screen and (max-width: 1000px) {
   .programming-tech a {
     font-size: 14px;
@@ -777,7 +729,6 @@ div#social__media ul li:hover {
     height: 12px;
   }
 }
-
 @media only screen and (max-width: 800px) {
   .programming-tech a {
     font-size: 12px;
@@ -795,14 +746,11 @@ div#social__media ul li:hover {
   font-size: 1rem;
   font-weight: bold;
 }
-
 .see-more a:hover {
   text-decoration: underline;
 }
-
 @media only screen and (max-width: 600px) {
   .see-more a {
     font-size: 0.7rem;
   }
 }
-/*# sourceMappingURL=our-works.css.map */
