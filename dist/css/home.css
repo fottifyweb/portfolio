@@ -22,20 +22,7 @@ body {
   height: 100%;
   width: 100%;
   overflow-y: scroll;
-  z-index: 1000;
-  margin-top: 120px;
-}
-
-@media only screen and (max-width: 1025px) {
-  .root {
-    margin-top: 90px;
-  }
-}
-
-@media only screen and (max-width: 601px) {
-  .root {
-    margin-top: 80px;
-  }
+  z-index: 100;
 }
 
 main {
@@ -170,7 +157,7 @@ a {
 }
 
 header.main-header {
-  position: fixed;
+  position: sticky;
   left: 0;
   top: 0;
   width: 100%;
@@ -487,7 +474,7 @@ div#social__media ul li:hover {
 
 @media (max-width: 601px) {
   #header__content {
-    padding: 10px 15px;
+    padding: 0px 15px;
     height: max-content;
   }
   #header__services,

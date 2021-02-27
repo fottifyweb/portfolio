@@ -27,15 +27,15 @@ body {
 	height: 100%;
 	width: 100%;
 	overflow-y: scroll;
-	z-index: 1000;
-	margin-top: 120px;
+	z-index: 100;
+	// margin: 120px 0 -120px 0;
 
 	@media only screen and (max-width: 1025px) {
-		margin-top: 90px;
+		// margin: 90px 0 0px;
 	}
 
 	@media only screen and (max-width: 601px) {
-		margin-top: 80px;
+		// margin: 80px 0 0px;
 	}
 }
 
@@ -184,7 +184,7 @@ a {
 
 header.main-header {
 	// border: 2px solid blue;
-	position: fixed;
+	position: sticky;
 	left: 0;
 	top: 0;
 	width: 100%;
@@ -583,7 +583,7 @@ div#social__media {
 
 @media (max-width: 601px) {
 	#header__content {
-		padding: 10px 15px;
+		padding: 0px 15px;
 		height: max-content;
 	}
 

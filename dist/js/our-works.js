@@ -42,6 +42,7 @@ function openImageVideoPreview(e) {
 closeImagePreview.addEventListener("click", () => {
 	imagePreview.style.width = "20px";
 	imagePreview.style.height = "20px";
+	imagePreview.style.left = "-50px";
 	video.src = "";
 	setTimeout(() => {
 		imagePreview.style.opacity = "0";
