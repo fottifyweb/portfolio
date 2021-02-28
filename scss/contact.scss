@@ -112,15 +112,16 @@ div.contact_form {
     }
 
     div.user_message {
-      // border: 2px solid green;
+      border: 2px solid green;
       margin: 0 auto;
       text-align: center;
       margin-bottom: 20px;
 
       textarea {
         // border: 2px solid green;
-        min-width: 500px;
+        
         width: 35%;
+        min-width: 300px;
         min-height: 100px;
         text-align: start;
         font-size: 16px;
@@ -324,7 +325,7 @@ div.contact_faq-item {
 ////////////////////////////////////////////////
 
   div.contact_concern {
-    border: 2px solid blue;
+    // border: 2px solid blue;
     gap: 10px;
     padding: 0;
   
@@ -339,19 +340,19 @@ div.contact_faq-item {
   
     &-text {
       // border: 2px solid green;
-      font-size: 100%;
+      font-size: 90%;
       width: 100%;
+      margin-left: 10px;
     }
   }
   /////////////////////////////////////
 
   div.contact_form {
+    border: 2px solid red;
     margin: 30px 0;
   
       h2 {
-        // font-family: inherit;
-        font-size: 120%;
-        // font-weight: 400;
+        font-size: 300%;
         margin-bottom: 20px;
       }
   
@@ -364,6 +365,7 @@ div.contact_faq-item {
   
         input {
           width: 80vw;
+          // min-width: 280px;
         }
       }
   
@@ -375,7 +377,7 @@ div.contact_faq-item {
   
         textarea {
           // border: 2px solid green;
-          min-width: 300px;
+          // min-width: 300px;
           width: 80vw;
         }
       }
@@ -384,7 +386,7 @@ div.contact_faq-item {
         font-size: 16px;
       }
     }
-  }
+  
   
   ///////////////////////////////////////
 
@@ -394,7 +396,7 @@ div.contact_faq-item {
     margin-bottom: 60px;
   
     h2.faq-header {
-      border: 2px solid grey;
+      // border: 2px solid grey;
       width: 80vw;
       min-width: 300px;
       font-size: 180%;
@@ -409,7 +411,6 @@ div.contact_faq-item {
   div.contact_faq-item {
     width: 90vw;
     min-width: 300px;
-    
   }
 }
 
