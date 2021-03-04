@@ -564,7 +564,6 @@ div.contact_form form div.user_info input {
   font-weight: 300;
 }
 div.contact_form form div.user_message {
-  border: 2px solid green;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 20px;
@@ -718,19 +717,27 @@ div.contact_faq-item div.reveal {
 
   h2.contact_facade-text {
     line-height: 35px;
-    word-spacing: 7px;
+    word-spacing: 7%;
     font-size: 170%;
     top: 70px;
     margin: 0 auto;
   }
-
+}
+@media (max-width: 600px) and (max-width: 400px) {
+  h2.contact_facade-text {
+    font-size: 150%;
+    top: 50px;
+  }
+}
+@media (max-width: 600px) {
   img#contact_facade-img {
     position: absolute;
     width: 70%;
     right: 10%;
     top: 30%;
   }
-
+}
+@media (max-width: 600px) {
   div.contact_concern {
     gap: 10px;
     padding: 0;
@@ -746,9 +753,9 @@ div.contact_faq-item div.reveal {
     width: 100%;
     margin-left: 10px;
   }
-
+}
+@media (max-width: 600px) {
   div.contact_form {
-    border: 2px solid red;
     margin: 30px 0;
   }
   div.contact_form h2 {
@@ -775,7 +782,8 @@ div.contact_faq-item div.reveal {
   div.contact_form button {
     font-size: 16px;
   }
-
+}
+@media (max-width: 600px) {
   div.contact_faq {
     margin-bottom: 60px;
   }
@@ -785,11 +793,13 @@ div.contact_faq-item div.reveal {
     font-size: 180%;
     margin-bottom: 10px;
   }
-
+}
+@media (max-width: 600px) {
   div.contact_faq-list {
     gap: 15px;
   }
-
+}
+@media (max-width: 600px) {
   div.contact_faq-item {
     width: 90vw;
     min-width: 300px;

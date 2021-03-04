@@ -112,7 +112,7 @@ div.contact_form {
     }
 
     div.user_message {
-      border: 2px solid green;
+      // border: 2px solid green;
       margin: 0 auto;
       text-align: center;
       margin-bottom: 20px;
@@ -309,11 +309,16 @@ div.contact_faq-item {
   h2.contact_facade-text {
     // border: 2px solid green;
     line-height: 35px;
-    word-spacing: 7px;
+    word-spacing: 7%;
     font-size: 170%;
     top: 70px;
     margin: 0 auto;
     // left: 15%;
+
+    @media (max-width: 400px) {
+      font-size: 150%;
+      top: 50px;
+    }
   }
   
   img#contact_facade-img {
@@ -348,7 +353,7 @@ div.contact_faq-item {
   /////////////////////////////////////
 
   div.contact_form {
-    border: 2px solid red;
+    // border: 2px solid red;
     margin: 30px 0;
   
       h2 {
@@ -385,7 +390,7 @@ div.contact_faq-item {
       button {
         font-size: 16px;
       }
-    }
+  }
   
   
   ///////////////////////////////////////
