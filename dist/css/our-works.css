@@ -236,6 +236,11 @@ header.main-header {
   align-items: center;
 }
 
+li.category__item {
+  font-weight: 600;
+  font-size: 19px;
+}
+
 div.service_dropdown {
   position: absolute;
   z-index: -1;
