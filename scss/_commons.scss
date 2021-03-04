@@ -298,6 +298,11 @@ header.main-header {
 	}
 }
 
+li.category__item {
+	font-weight: 600;
+	font-size: 19px;
+}
+
 div.service_dropdown {
 	// border: 2px solid green;
 	position: absolute;
@@ -308,6 +313,7 @@ div.service_dropdown {
 	max-width: 600px;
 	background-color: lighten($purple, 50%);
 	font-size: 16px;
+	// font-weight: 400;
 	color: darken($purple, 30%);
 	overflow: hidden;
 	margin: 0 auto;
