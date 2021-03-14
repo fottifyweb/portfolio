@@ -18,6 +18,15 @@ body {
   overflow: hidden;
 }
 
+:target:before {
+  content: "";
+  display: block;
+  height: 100px;
+  /* fixed header height*/
+  margin: -100px 0 0;
+  /* negative fixed header height */
+}
+
 .root {
   height: 100%;
   width: 100%;
@@ -116,10 +125,6 @@ main {
   border-bottom: 1px solid #8b4d79;
 }
 
-.mobile-nav i {
-  transition: transform 0.2s ease-in;
-}
-
 .mobile-nav .sub-category {
   display: flex;
   justify-content: space-between;
@@ -128,11 +133,6 @@ main {
   font-size: 0.8rem;
   background-color: #f7b0f7;
   border-bottom: 1px solid #8b4d79;
-}
-
-.mobile-nav .opened-icon > i {
-  transform-origin: center;
-  transform: rotate(90deg);
 }
 
 .mobile-nav button {
@@ -145,6 +145,15 @@ main {
   font-size: 1rem;
   font-weight: bold;
   margin: 15px auto;
+}
+
+i {
+  transition: transform 0.2s ease-in;
+}
+
+.opened-icon > i {
+  transform-origin: center;
+  transform: rotate(90deg);
 }
 
 li {
@@ -254,6 +263,11 @@ header.main-header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+li.category__item {
+  font-weight: 600;
+  font-size: 19px;
 }
 
 div.service_dropdown {
@@ -565,9 +579,10 @@ div#social__media ul li:hover {
 
 .section-header {
   background-color: #fff;
-  color: red;
+  color: #eba342;
   font-weight: bold;
   padding: 10px 20px;
+  width: max-content;
   text-transform: uppercase;
 }
 
@@ -790,7 +805,7 @@ div#social__media ul li:hover {
 
 .see-more a {
   text-transform: lowercase;
-  color: red;
+  color: #8b4d79;
   text-decoration: none;
   font-size: 1rem;
   font-weight: bold;

@@ -18,6 +18,15 @@ body {
   overflow: hidden;
 }
 
+:target:before {
+  content: "";
+  display: block;
+  height: 100px;
+  /* fixed header height*/
+  margin: -100px 0 0;
+  /* negative fixed header height */
+}
+
 .root {
   height: 100%;
   width: 100%;
@@ -116,10 +125,6 @@ main {
   border-bottom: 1px solid #8b4d79;
 }
 
-.mobile-nav i {
-  transition: transform 0.2s ease-in;
-}
-
 .mobile-nav .sub-category {
   display: flex;
   justify-content: space-between;
@@ -128,11 +133,6 @@ main {
   font-size: 0.8rem;
   background-color: #f7b0f7;
   border-bottom: 1px solid #8b4d79;
-}
-
-.mobile-nav .opened-icon > i {
-  transform-origin: center;
-  transform: rotate(90deg);
 }
 
 .mobile-nav button {
@@ -145,6 +145,15 @@ main {
   font-size: 1rem;
   font-weight: bold;
   margin: 15px auto;
+}
+
+i {
+  transition: transform 0.2s ease-in;
+}
+
+.opened-icon > i {
+  transform-origin: center;
+  transform: rotate(90deg);
 }
 
 li {
@@ -254,6 +263,11 @@ header.main-header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+li.category__item {
+  font-weight: 600;
+  font-size: 19px;
 }
 
 div.service_dropdown {
@@ -558,7 +572,8 @@ div.contact_form form {
   font-family: "Ubuntu", sans-serif;
 }
 
-div.contact_form form input, div.contact_form form textarea {
+div.contact_form form input,
+div.contact_form form textarea {
   border: transparent;
   box-shadow: 0px 0px 7px 1px #cdcdcd;
   border-radius: 6px;
@@ -598,8 +613,8 @@ div.contact_form form div.user_message {
 }
 
 div.contact_form form div.user_message textarea {
-  min-width: 500px;
   width: 35%;
+  min-width: 300px;
   min-height: 100px;
   text-align: start;
   font-size: 16px;
@@ -647,6 +662,9 @@ div.contact_faq-list {
 }
 
 div.contact_faq-item {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
   border: none;
   background-color: white;
   box-shadow: 0px 0px 7px 1px #cdcdcd;
@@ -660,7 +678,8 @@ div.contact_faq-item div.question {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 10px 20px;
+  cursor: pointer;
 }
 
 div.contact_faq-item div.question h4.faq-item-question {
@@ -677,9 +696,14 @@ div.contact_faq-item div.question h4.reveal-sign {
 }
 
 div.contact_faq-item div.answer {
-  display: none;
+  overflow: hidden;
+  height: 0px;
+  transition: height 0.2s linear;
+}
+
+div.contact_faq-item div.answer p {
   border-top: 1px solid grey;
-  padding: 10px 50% 20px 20px;
+  padding: 10px 20px;
   text-align: left;
 }
 
@@ -728,6 +752,102 @@ div.contact_faq-item div.reveal {
   }
   div.contact_concern-text {
     font-size: 120%;
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    margin-top: 0px;
+  }
+  div.contact_facade {
+    overflow-x: hidden;
+  }
+  img#contact_facade-bg {
+    position: relative;
+    left: -60%;
+    top: -30%;
+    width: 190%;
+  }
+  h2.contact_facade-text {
+    line-height: 35px;
+    word-spacing: 7%;
+    font-size: 170%;
+    top: 70px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) and (max-width: 400px) {
+  h2.contact_facade-text {
+    font-size: 150%;
+    top: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  img#contact_facade-img {
+    position: absolute;
+    width: 70%;
+    right: 10%;
+    top: 30%;
+  }
+  div.contact_concern {
+    gap: 10px;
+    padding: 0;
+  }
+  div.contact_concern-img {
+    flex-shrink: 2;
+  }
+  div.contact_concern-img img {
+    width: 100%;
+  }
+  div.contact_concern-text {
+    font-size: 90%;
+    width: 100%;
+    margin-left: 10px;
+  }
+  div.contact_form {
+    margin: 30px 0;
+  }
+  div.contact_form h2 {
+    font-size: 300%;
+    margin-bottom: 20px;
+  }
+  div.contact_form div.user_info {
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  div.contact_form div.user_info input {
+    width: 80vw;
+  }
+  div.contact_form div.user_message {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  div.contact_form div.user_message textarea {
+    width: 80vw;
+  }
+  div.contact_form button {
+    font-size: 16px;
+  }
+  div.contact_faq {
+    margin-bottom: 60px;
+  }
+  div.contact_faq h2.faq-header {
+    width: 80vw;
+    min-width: 300px;
+    font-size: 180%;
+    margin-bottom: 10px;
+  }
+  div.contact_faq-list {
+    gap: 15px;
+  }
+  div.contact_faq-item {
+    width: 90vw;
+    min-width: 300px;
   }
 }
 /*# sourceMappingURL=contact.css.map */

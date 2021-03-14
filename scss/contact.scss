@@ -1,215 +1,226 @@
-
-@import 'config';
-@import 'commons';
+@import "config";
+@import "commons";
 
 main {
-  margin-top: 140px;
-  width: 100%;
+	// border: 2px solid red;
+	margin-top: 140px;
+	width: 100%;
 }
 
 div.contact_facade {
-  // border: 2px solid red;
-  position: relative;
+	// border: 2px solid red;
+	position: relative;
 }
 
 img#contact_facade-bg {
-  // position: absolute;
-  margin-left: 40px;
-  width: 90%;
-  filter: drop-shadow(1px 3px 4px lighten(grey, 30%));
+	// position: absolute;
+	margin-left: 40px;
+	width: 90%;
+	filter: drop-shadow(1px 3px 4px lighten(grey, 30%));
 }
 
 h2.contact_facade-text {
-  // border: 2px solid green;
-  position: absolute;
-  color: darken(grey, 5);
-  line-height: 55px;
-  font-size: 250%;
-  top: 25%;
-  left: 17%;
-  text-align: center;
-  z-index: 1
+	// border: 2px solid green;
+	position: absolute;
+	color: darken(grey, 5);
+	line-height: 55px;
+	font-size: 250%;
+	top: 25%;
+	left: 17%;
+	text-align: center;
+	z-index: 1;
 }
 
 img#contact_facade-img {
-  position: absolute;
-  width: 30%;
-  right: 15%;
-  top: 21%;
+	position: absolute;
+	width: 30%;
+	right: 15%;
+	top: 21%;
 }
 
 div.contact_concern {
-  // border: 2px solid blue;
-  margin-top: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 100px;
-  @include pad;
+	// border: 2px solid blue;
+	margin-top: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 100px;
+	@include pad;
 
-  &-img {
-    // border: 2px solid green;
+	&-img {
+		// border: 2px solid green;
 
-    img {
-      width: 100%;
-    }
-  }
+		img {
+			width: 100%;
+		}
+	}
 
-  &-text {
-    text-align: center;
-    font-size: 170%;
-    color: darken(grey, 5);
+	&-text {
+		text-align: center;
+		font-size: 170%;
+		color: darken(grey, 5);
 
-    h2 {
-      font-family: "Ubuntu", sans-serif;
-    }
-  }
+		h2 {
+			font-family: "Ubuntu", sans-serif;
+		}
+	}
 }
 
 div.contact_form {
-  color: darken(grey, 5);
-  margin: 50px 0;
-  // border: 2px solid green;
-  text-align: center;
+	color: darken(grey, 5);
+	margin: 50px 0;
+	// border: 2px solid green;
+	text-align: center;
 
-  form {
-    // border: 2px solid red;
-    font-family: "Ubuntu", sans-serif;
+	form {
+		// border: 2px solid red;
+		font-family: "Ubuntu", sans-serif;
 
-    input, textarea {
-      border: transparent;
-      box-shadow: 0px 0px 7px 1px lighten(grey, 30%);
-      border-radius: 6px;
-    }
+		input,
+		textarea {
+			border: transparent;
+			box-shadow: 0px 0px 7px 1px lighten(grey, 30%);
+			border-radius: 6px;
+		}
 
-    h2 {
-      font-family: inherit;
-      font-size: 180%;
-      font-weight: 200;
-      margin-bottom: 30px;
-    }
+		h2 {
+			font-family: inherit;
+			font-size: 180%;
+			font-weight: 200;
+			margin-bottom: 30px;
+		}
 
-    div.user_info {
-      // border: 2px solid blue;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 40px;
-      margin-bottom: 30px;
+		div.user_info {
+			// border: 2px solid blue;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 40px;
+			margin-bottom: 30px;
 
-      input {
-        width: 20%;
-        min-width: 280px;
-        height: 40px;
-        font-size: 16px;
-        letter-spacing: 2px;
-        padding: 7px;
-        font-family: "Ubuntu", sans-serif;
-        font-weight: 300;
-      }
-    }
+			input {
+				width: 20%;
+				min-width: 280px;
+				height: 40px;
+				font-size: 16px;
+				letter-spacing: 2px;
+				padding: 7px;
+				font-family: "Ubuntu", sans-serif;
+				font-weight: 300;
+			}
+		}
 
-    div.user_message {
-      // border: 2px solid green;
-      margin: 0 auto;
-      text-align: center;
-      margin-bottom: 20px;
+		div.user_message {
+			// border: 2px solid green;
+			margin: 0 auto;
+			text-align: center;
+			margin-bottom: 20px;
 
-      textarea {
-        // border: 2px solid green;
-        min-width: 500px;
-        width: 35%;
-        min-height: 100px;
-        text-align: start;
-        font-size: 16px;
-        letter-spacing: 2px;
-        padding: 7px;
-        font-family: "Ubuntu", sans-serif;
-        font-weight: 300;
-      }
-    }
+			textarea {
+				// border: 2px solid green;
 
-    button {
-      width: 10%;
-      max-width: 240px;
-      min-width: 120px;
-      font-size: 120%;
-      letter-spacing: 3px;
-      padding: 5px 10px;
-      // line-height: 100%;
-      font-family: "Ubuntu", sans-serif;
-      font-weight: 400;
-      border: none;
-      background-color: darken($purple, 3);
-      color: white;
-      border-radius: 12px;
-    }
-  }
+				width: 35%;
+				min-width: 300px;
+				min-height: 100px;
+				text-align: start;
+				font-size: 16px;
+				letter-spacing: 2px;
+				padding: 7px;
+				font-family: "Ubuntu", sans-serif;
+				font-weight: 300;
+			}
+		}
+
+		button {
+			width: 10%;
+			max-width: 240px;
+			min-width: 120px;
+			font-size: 120%;
+			letter-spacing: 3px;
+			padding: 5px 10px;
+			// line-height: 100%;
+			font-family: "Ubuntu", sans-serif;
+			font-weight: 400;
+			border: none;
+			background-color: darken($purple, 3);
+			color: white;
+			border-radius: 12px;
+		}
+	}
 }
 
 div.contact_faq {
-  // border: 2px solid green;
-  margin-bottom: 80px;
+	// border: 2px solid green;
+	margin-bottom: 80px;
 
-  h2.faq-header {
-    // border: 2px solid grey;
-    width: 70%;
-    min-width: 500px;
-    text-align: right;
-    font-size: 200%;
-    font-family: "Ubuntu", sans-serif;
-    margin: 0 auto;
-    margin-bottom: 20px;
-  }
+	h2.faq-header {
+		// border: 2px solid grey;
+		width: 70%;
+		min-width: 500px;
+		text-align: right;
+		font-size: 200%;
+		font-family: "Ubuntu", sans-serif;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
 }
 
 div.contact_faq-list {
-  // border: 2px solid red;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 20px;
+	// border: 2px solid red;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 20px;
 }
 div.contact_faq-item {
-  border: none;
-  background-color: white;
-  box-shadow: 0px 0px 7px 1px lighten(grey, 30%);
-  width: 70%;
-  min-width: 500px;
-  margin: 0 auto;
-  font-family: "Ubuntu", sans-serif;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	border: none;
+	background-color: white;
+	box-shadow: 0px 0px 7px 1px lighten(grey, 30%);
+	width: 70%;
+	min-width: 500px;
+	margin: 0 auto;
+	font-family: "Ubuntu", sans-serif;
 
-  div.question {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-    
-    h4.faq-item-question {
-      font-size: 18px;
-      font-weight: 200;
-    }
-    h4.reveal-sign {
-      text-align: right;
-      font-size: 30px;
-      font-weight: 200;
-      cursor: pointer;
-      padding: 0 20px;
-    }
-  }
+	div.question {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 10px 20px;
+		cursor: pointer;
 
-  div.answer {
-    display: none;
-    border-top: 1px solid grey;
-    padding: 10px 50% 20px 20px;
-    text-align: left;
-  }
+		h4.faq-item-question {
+			font-size: 18px;
+			font-weight: 200;
+		}
+		h4.reveal-sign {
+			text-align: right;
+			font-size: 30px;
+			font-weight: 200;
+			cursor: pointer;
+			padding: 0 20px;
+		}
+	}
 
-  div.reveal {
-    display: block;
-  }
+	div.answer {
+		overflow: hidden;
+		height: 0px;
+		transition: height 0.2s linear;
+
+		p {
+			border-top: 1px solid grey;
+			padding: 10px 20px;
+			text-align: left;
+		}
+	}
+
+	div.reveal {
+		display: block;
+	}
 }
 
 // ********************************************
@@ -221,32 +232,31 @@ div.contact_faq-item {
 // *********************************************
 
 @media (max-width: 1025px) {
+	img#contact_facade-bg {
+		margin-left: 20px;
+		width: 95%;
+	}
+	h2.contact_facade-text {
+		// border: 2px solid green;
+		line-height: 40px;
+		font-size: 220%;
+		left: 12%;
+	}
+	img#contact_facade-img {
+		// border: 2px solid green;
+		width: 35%;
+		right: 10%;
+	}
 
-  img#contact_facade-bg {
-    margin-left: 20px;
-    width: 95%;
-  }
-  h2.contact_facade-text {
-    // border: 2px solid green;
-    line-height: 40px;
-    font-size: 220%;
-    left: 12%;
-  }
-  img#contact_facade-img {
-    // border: 2px solid green;
-    width: 35%;
-    right: 10%;
-  }
+	div.contact_concern {
+		// border: 2px solid blue;
+		gap: 60px;
+		padding: 0 40px;
 
-  div.contact_concern {
-    // border: 2px solid blue;
-    gap: 60px;
-    padding: 0 40px;
-  
-    &-text {
-      font-size: 150%;
-    }
-  }  
+		&-text {
+			font-size: 150%;
+		}
+	}
 }
 
 // ********************************************
@@ -254,28 +264,160 @@ div.contact_faq-item {
 // *********************************************
 
 @media (max-width: 780px) {
-  
-  img#contact_facade-bg {
-    margin-left: 15px;
-  }
-  h2.contact_facade-text {
-    // border: 2px solid green;
-    line-height: 30px;
-    font-size: 160%;
-  }
-  img#contact_facade-img {
-    // border: 2px solid green;
-    width: 35%;
-    right: 10%;
-  }
+	img#contact_facade-bg {
+		margin-left: 15px;
+	}
+	h2.contact_facade-text {
+		// border: 2px solid green;
+		line-height: 30px;
+		font-size: 160%;
+	}
+	img#contact_facade-img {
+		// border: 2px solid green;
+		width: 35%;
+		right: 10%;
+	}
 
-  div.contact_concern {
-    gap: 20px;
-    padding: 0 30px;
-  
-    &-text {
-      font-size: 120%;
-    }
-  }
+	div.contact_concern {
+		gap: 20px;
+		padding: 0 30px;
 
+		&-text {
+			font-size: 120%;
+		}
+	}
+}
+
+// ********************************************
+//                  PHONE (600px)
+// *********************************************
+
+@media (max-width: 600px) {
+	main {
+		// border: 2px solid red;
+		margin-top: 0px;
+	}
+
+	div.contact_facade {
+		// border: 2px solid green;
+		overflow-x: hidden;
+	}
+
+	img#contact_facade-bg {
+		position: relative;
+		left: -60%;
+		top: -30%;
+		width: 190%;
+		// filter: drop-shadow(1px 3px 4px lighten(grey, 30%));
+	}
+
+	h2.contact_facade-text {
+		// border: 2px solid green;
+		line-height: 35px;
+		word-spacing: 7%;
+		font-size: 170%;
+		top: 70px;
+		margin: 0 auto;
+		// left: 15%;
+
+		@media (max-width: 400px) {
+			font-size: 150%;
+			top: 50px;
+		}
+	}
+
+	img#contact_facade-img {
+		position: absolute;
+		width: 70%;
+		right: 10%;
+		top: 30%;
+	}
+	////////////////////////////////////////////////
+
+	div.contact_concern {
+		// border: 2px solid blue;
+		gap: 10px;
+		padding: 0;
+
+		&-img {
+			// border: 2px solid green;
+			flex-shrink: 2;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		&-text {
+			// border: 2px solid green;
+			font-size: 90%;
+			width: 100%;
+			margin-left: 10px;
+		}
+	}
+	/////////////////////////////////////
+
+	div.contact_form {
+		// border: 2px solid red;
+		margin: 30px 0;
+
+		h2 {
+			font-size: 300%;
+			margin-bottom: 20px;
+		}
+
+		div.user_info {
+			// border: 2px solid blue;
+			width: 100%;
+			flex-direction: column;
+			gap: 20px;
+			margin-bottom: 20px;
+
+			input {
+				width: 80vw;
+				// min-width: 280px;
+			}
+		}
+
+		div.user_message {
+			// border: 2px solid green;
+			margin: 0 auto;
+			text-align: center;
+			margin-bottom: 20px;
+
+			textarea {
+				// border: 2px solid green;
+				// min-width: 300px;
+				width: 80vw;
+			}
+		}
+
+		button {
+			font-size: 16px;
+		}
+	}
+
+	///////////////////////////////////////
+
+	div.contact_faq {
+		// border: 2px solid green;
+		margin-bottom: 60px;
+
+		h2.faq-header {
+			// border: 2px solid grey;
+			width: 80vw;
+			min-width: 300px;
+			font-size: 180%;
+			margin-bottom: 10px;
+		}
+	}
+
+	div.contact_faq-list {
+		// border: 2px solid red;
+		gap: 15px;
+	}
+	div.contact_faq-item {
+		width: 90vw;
+		min-width: 300px;
+	}
 }
