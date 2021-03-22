@@ -238,7 +238,7 @@ header.main-header {
 
 li.category__item {
   font-weight: 600;
-  font-size: 19px;
+  font-size: 110%;
 }
 
 div.service_dropdown {
@@ -249,7 +249,7 @@ div.service_dropdown {
   min-width: 100px;
   max-width: 600px;
   background-color: #f1e6ee;
-  font-size: 16px;
+  font-size: 95%;
   color: #291623;
   overflow: hidden;
   margin: 0 auto;
@@ -425,7 +425,7 @@ div#social__media ul li:hover {
 
   #header__services {
     gap: 8%;
-    font-size: 14px;
+    font-size: 16px;
   }
 
   div#newsletter {
