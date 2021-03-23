@@ -23,6 +23,13 @@ body {
 	overflow: hidden;
 }
 
+:target:before {
+	content: "";
+	display: block;
+	height: 100px; /* fixed header height*/
+	margin: -100px 0 0; /* negative fixed header height */
+}
+
 .root {
 	height: 100%;
 	width: 100%;
@@ -136,10 +143,6 @@ main {
 		border-bottom: 1px solid $purple;
 	}
 
-	i {
-		transition: transform 0.2s ease-in;
-	}
-
 	.sub-category {
 		display: flex;
 		justify-content: space-between;
@@ -148,11 +151,6 @@ main {
 		font-size: 0.8rem;
 		background-color: rgb(247, 176, 247);
 		border-bottom: 1px solid $purple;
-	}
-
-	.opened-icon > i {
-		transform-origin: center;
-		transform: rotate(90deg);
 	}
 
 	button {
@@ -166,6 +164,15 @@ main {
 		font-weight: bold;
 		margin: 15px auto;
 	}
+}
+
+i {
+	transition: transform 0.2s ease-in;
+}
+
+.opened-icon > i {
+	transform-origin: center;
+	transform: rotate(90deg);
 }
 
 //

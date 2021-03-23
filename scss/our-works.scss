@@ -75,10 +75,10 @@
 
 .section-header {
 	background-color: #fff;
-	color: red;
+	color: $orange;
 	font-weight: bold;
 	padding: 10px 20px;
-	// width: max-content;
+	width: max-content;
 	text-transform: uppercase;
 
 	@media only screen and (max-width: 600px) {
@@ -301,7 +301,7 @@
 
 	a {
 		text-transform: lowercase;
-		color: red;
+		color: $purple;
 		text-decoration: none;
 		font-size: 1rem;
 		font-weight: bold;
@@ -315,3 +315,8 @@
 		}
 	}
 }
+
+// #programming-tech {
+// 	display: block;
+// 	position: relative;
+// }
