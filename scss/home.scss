@@ -106,7 +106,7 @@ div#ads {
             line-height: 100%;
         }
 
-        p {
+        p.sub-header {
             font-size: 140%;
             line-height: 150%;
             margin-bottom: 20px;
@@ -114,18 +114,16 @@ div#ads {
 
         ul li {
             font-size: 100%;
-            // line-height: 5%;
+            line-height: 30px;
 
-            p {
-                display: inline-block;
+            span.check {
                 // border: 2px solid green;
                 color: white;
-                font-size: 100%;
                 background-color: $purple;
                 border-radius: 50px;
-                width: 25px;
-                height: 25px;
+                padding: 0 5px;
                 text-align: center;
+                margin-right: 5px;
             }
         }
     }
@@ -223,9 +221,9 @@ div.feature {
     }
     
     &__list {
-        // border: 2px solid rgb(10, 223, 92);
+        // border: 2px solid red;
         display: grid;
-        justify-self: center;
+        justify-content: center;
         align-self: center;
         margin-top: 50px;
         grid-template-rows: repeat(3, 150px);
@@ -300,7 +298,7 @@ div.feature {
 
             ul li {
                 font-size: 90%;
-                display: inline-block;
+                // display: inline-block;
             }
         }
 
@@ -308,8 +306,9 @@ div.feature {
             // border: 2px solid green;
             height: 400px;
         }
-
     }
+
+
     div#features {
         padding: 0 40px;
     }
@@ -395,7 +394,7 @@ div.feature {
             h3 {
                 font-size: 130%;
             }
-            p {
+            p.sub-header {
                 font-size: 18px;
             }
             ul {
@@ -454,18 +453,18 @@ div.feature {
 
 
 // // *******************************************
-//                 // TABLETS (660px)
+//                 // TABLETS (600px)
 // // *******************************************
 
 @media (max-width: 601px) {
 
     div#intro__pic {
-        height: 50vh;
+        height: 40vh;
     }
 
 
     #facade {
-        border: 2px solid red;
+        // border: 2px solid red;
         display: block;
         padding: 30px 20px;
         margin: 0;
@@ -486,7 +485,7 @@ div.feature {
                 word-spacing: 4px;
                 letter-spacing: 2px;
                 margin-bottom: 2%;
-                font-size: 150%;
+                font-size: 180%;
                 line-height: 120%;
                 margin-top: 0px;
             }
@@ -509,12 +508,13 @@ div.feature {
 
 
     div#ads {
-        border: 2px solid red;
+        // border: 2px solid red;
         margin: 0;
         padding: 30px 20px;
         display: block;
     
         &__text {
+            // border: 2px solid green;
             color: grey;
             align-self: center;
             padding-left: 0px;
@@ -526,25 +526,33 @@ div.feature {
                 line-height: 100%;
             }
     
-            p {
+            p.sub-header {
+                // border: 2px solid red;
                 font-size: 120%;
                 line-height: 150%;
                 font-weight: 100;
-                margin-bottom: 10px;
+                margin-bottom: 10px;                
             }
-    
+
             ul li {
-                font-size: 100%;
-    
-                p {
+                // border: 2px solid green;
+
+
+                span.check {
                     // border: 2px solid green;
                     font-size: 90%;
                     border-radius: 100%;
+                    padding: 0 3px;
                     width: 20px;
-                    height: 20px;
-                    margin-right: 10px;
+                    height: 50px;
+                    margin-right: 1px;  
                 }
-            }
+
+                span {
+                    font-size: 80%;
+                }
+            }    
+            
         }
     
         &__img {
@@ -555,12 +563,11 @@ div.feature {
 
 
     div#features {
-        border: 2px solid red;
-        // display: flex;
+        // border: 2px solid red;
         flex-direction: column;
         gap: 7vw;
-        margin-top: 0;
-        // padding-bottom: 20px;
+        margin: 0;
+        padding-bottom: 50px;
     }
 
     div.feature {
@@ -587,23 +594,22 @@ div.feature {
 
 
     .tools {
-        // border: 2px solid red;
-        @include text-font;
-        background-image: url('../imgs/fottwhirl.svg');  // dist\imgs\fottwhirl.svg
-        background-repeat: no-repeat;
-        background-size: contain;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: flex-end;
-        justify-content: center;
-    
+        border: 2px solid rgb(6, 119, 53);
+        padding: 0;
+
+
         .header__content {
-            // margin-top: 150px;
+            // border: 2px solid green;
             @include header;
-            position: relative;
-            right: 10%;
-            top: 80px;
+            font-size: 120%;
+            margin: 0;
+            right: 5%;
+            top: 17px;
+
+            @media only screen and (max-width: 400px) {
+                font-size: 70%;
+                top: 20px;
+            }
     
             .header__underline {
                 width: 70%;
@@ -612,16 +618,16 @@ div.feature {
         
         &__list {
             // border: 2px solid rgb(10, 223, 92);
-            display: grid;
-            justify-self: center;
-            align-self: center;
-            margin-top: 50px;
-            grid-template-rows: repeat(3, 150px);
-            grid-template-columns: repeat(3, 1fr);
+            margin: 0 0px;
+            width: 70%;
+            justify-content: center;
+            align-items: center;
+            gap: 0px;
     
             .tool {
                 // border: 2px solid rgb(71, 8, 216);
                 transform: scale(0.6);
+                margin: 0;
     
                 img {
                     width: 100%;
