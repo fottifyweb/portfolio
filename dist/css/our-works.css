@@ -76,7 +76,7 @@ main {
   display: none;
   flex-direction: column;
   height: 85vh;
-  width: 100%;
+  width: 60%;
   position: absolute;
   left: -100vw;
   overflow-x: hidden;

@@ -1,15 +1,15 @@
+{
+	/* <script src="//code.tidio.co/dkziaxsfvsmeiir6n8oclpkt3il5cexj.js" async></script> */
+}
 
-{/* <script src="//code.tidio.co/dkziaxsfvsmeiir6n8oclpkt3il5cexj.js" async></script> */}
-
-import { navToggle, toggleContent } from "./mobile-header.js";
 import { navToggle } from "./mobile-header.js";
+import { startSlider, SLIDER_DURATION } from "./slider.js";
 import { toggleIcon } from "./Utilities/toggleIcon.js";
 
 const menu = document.querySelector(".ham-menu");
 const ourServices = document.querySelector(".our-services-content");
 const categoriesContent = document.querySelectorAll(".categories-content");
 const questions = document.querySelectorAll(".question");
-// export let element =
 
 // Toggles Menu
 menu.addEventListener("click", navToggle);
@@ -43,6 +43,11 @@ questions.forEach((question) => {
 		toggleIcon(target, answer);
 	});
 });
+
+// Slider Initialization
+setTimeout(() => {
+	startSlider();
+}, SLIDER_DURATION);
 
 // **********************************
 // ISMAIL's SHIT
