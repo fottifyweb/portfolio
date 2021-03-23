@@ -307,7 +307,7 @@ header.main-header {
 
 li.category__item {
 	font-weight: 600;
-	font-size: 19px;
+	font-size: 110%;
 }
 
 div.service_dropdown {
@@ -319,7 +319,7 @@ div.service_dropdown {
 	min-width: 100px;
 	max-width: 600px;
 	background-color: lighten($purple, 50%);
-	font-size: 16px;
+	font-size: 95%;
 	// font-weight: 400;
 	color: darken($purple, 30%);
 	overflow: hidden;
@@ -550,7 +550,7 @@ div#social__media {
 	}
 	#header__services {
 		gap: 8%;
-		font-size: 14px;
+		font-size: 16px;
 	}
 
 	div#newsletter {
@@ -616,4 +616,22 @@ div#social__media {
 	.mobile-nav {
 		display: flex;
 	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
 }
