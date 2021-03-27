@@ -25,7 +25,7 @@ function openNav() {
 	const headerHeight = header.scrollHeight;
 
 	nav.style.height = `${window.innerHeight - headerHeight}.px`;
-	nav.style.opacity = `.8`;
+	nav.style.opacity = `.9`;
 	nav.style.left = `0`;
 }
 

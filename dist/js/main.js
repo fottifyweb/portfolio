@@ -1,7 +1,3 @@
-{
-	/* <script src="//code.tidio.co/dkziaxsfvsmeiir6n8oclpkt3il5cexj.js" async></script> */
-}
-
 import { navToggle } from "./mobile-header.js";
 import { startSlider, SLIDER_DURATION } from "./slider.js";
 import { toggleIcon } from "./Utilities/toggleIcon.js";
@@ -10,6 +6,19 @@ const menu = document.querySelector(".ham-menu");
 const ourServices = document.querySelector(".our-services-content");
 const categoriesContent = document.querySelectorAll(".categories-content");
 const questions = document.querySelectorAll(".question");
+const root = document.querySelector(".root");
+const spinner = document.querySelector(".spinner");
+
+window.addEventListener("load", () => {
+	try {
+		spinner.style.height = `0`;
+	} catch (err) {
+		false;
+	}
+	root.style.opacity = `1`;
+
+	// root.style.overflow = `scroll`;
+});
 
 // Toggles Menu
 menu.addEventListener("click", navToggle);

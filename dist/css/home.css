@@ -27,7 +27,33 @@ body {
   /* negative fixed header height */
 }
 
+.spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 100%;
+}
+
+.spinner .dot {
+  width: 6vw;
+  height: 6vw;
+  margin: 5px;
+  border-radius: 50%;
+  background-color: purple;
+  animation: bounce 0.5s linear infinite both alternate;
+}
+
+.spinner .dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.spinner .dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
 .root {
+  opacity: 0;
   height: 100%;
   width: 100%;
   overflow-y: scroll;
@@ -76,7 +102,7 @@ main {
   display: none;
   flex-direction: column;
   height: 85vh;
-  width: 60%;
+  width: 70%;
   position: absolute;
   left: -100vw;
   overflow-x: hidden;
@@ -145,6 +171,7 @@ main {
   font-size: 1rem;
   font-weight: bold;
   margin: 15px auto;
+  outline: none;
 }
 
 i {
@@ -506,8 +533,19 @@ div#social__media ul li:hover {
   }
 }
 
+@keyframes bounce {
+  from {
+    width: 6vw;
+    height: 6vw;
+  }
+  to {
+    width: 2vw;
+    height: 2vw;
+  }
+}
+
 @font-face {
-  font-family: 'BluuNext';
+  font-family: "BluuNext";
   src: url("../fonts/BluuNext-Bold.otf");
 }
 
@@ -996,7 +1034,6 @@ div.feature__img.fourth {
     margin: 10% auto;
   }
   .tools {
-    border: 2px solid #067735;
     padding: 0;
   }
   .tools .header__content {
