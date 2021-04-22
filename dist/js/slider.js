@@ -6,6 +6,7 @@ export function startSlider() {
 	try {
 		const currentImg = document.querySelector("#intro__pic").children[0];
 		const nextImg = document.querySelector("#intro__pic").children[1];
+		console.log(currentImg, nextImg);
 
 		moveRight(currentImg, nextImg);
 	} catch (error) {
