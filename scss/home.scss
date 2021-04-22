@@ -49,6 +49,7 @@ div#intro__pic {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	overflow: hidden;
 
 	&:first-child {
 		left: 0;
@@ -505,6 +506,17 @@ div.feature {
 // // *******************************************
 
 @media (max-width: 601px) {
+	.img-text {
+		bottom: 0;
+
+		h2 {
+			font-size: 8vw;
+		}
+
+		h3 {
+			font-size: 4.8vw;
+		}
+	}
 	div#intro__pic {
 		height: 40vh;
 	}
