@@ -580,6 +580,7 @@ div#intro__pic .center-right {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .intro-img:first-child {
@@ -965,6 +966,15 @@ div.feature__img.fourth {
 }
 
 @media (max-width: 601px) {
+  .img-text {
+    bottom: 0;
+  }
+  .img-text h2 {
+    font-size: 8vw;
+  }
+  .img-text h3 {
+    font-size: 4.8vw;
+  }
   div#intro__pic {
     height: 40vh;
   }
