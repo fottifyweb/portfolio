@@ -12,7 +12,7 @@
 div#intro__pic {
 	position: relative;
 	width: 100%;
-	height: 90vh;
+	height: 85%;
 	// display: flex;
 	// flex-direction: row;
 	overflow: hidden;
@@ -26,19 +26,6 @@ div#intro__pic {
 	//     background-color: rgba(128, 128, 128, 0.329);
 	// }
 
-	.intro-img {
-		position: absolute;
-		left: -100%;
-		object-fit: cover;
-		object-position: center;
-		width: 100%;
-		height: 100%;
-
-		&:first-child {
-			left: 0;
-		}
-	}
-
 	.right-center {
 		animation: right-to-center 2s ease-in 1 forwards;
 	}
@@ -51,6 +38,52 @@ div#intro__pic {
 	}
 	.center-right {
 		animation-name: center-to-right 2s ease-in 1 forwards;
+	}
+}
+
+.intro-img {
+	position: absolute;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&:first-child {
+		left: 0;
+	}
+
+	img {
+		object-fit: cover;
+		object-position: center;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.img-text {
+	position: absolute;
+	bottom: 5%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	h2 {
+		font-size: 6vw;
+		font-weight: bolder;
+		color: rgb(5, 105, 105);
+		background-color: rgba(225, 225, 225, 0.527);
+		padding: 0 20px;
+		width: max-content;
+	}
+
+	h3 {
+		font-size: 4vw;
+		color: #fff;
+		background-color: rgba(128, 124, 124, 0.527);
+		width: max-content;
+		padding: 0 20px;
 	}
 }
 

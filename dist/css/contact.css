@@ -107,7 +107,7 @@ main {
   left: -100vw;
   overflow-x: hidden;
   overflow-y: scroll;
-  background-color: inherit;
+  background-color: rgba(247, 240, 245, 0.9);
   transition: left 0.3s ease-in, opacity 0.3s ease-in;
   z-index: 25;
   opacity: 0;
