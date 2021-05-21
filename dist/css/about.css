@@ -559,57 +559,71 @@ div#about__animation img {
   height: 100%;
 }
 
-section#about {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 5%;
-  padding: 0 80px;
-  margin: 20px 0 30px;
-}
-
-.about__item {
-  width: 45%;
-  min-height: 350px;
-  max-width: 400px;
-  box-shadow: 0.25px 0.25px 5px 0.25px rgba(128, 128, 128, 0.527);
-  border: 1.5px solid #d6b5cc;
-  border-radius: 10px;
-  padding: 20px 35px;
-  color: #86530e;
-}
-
-.about__item:nth-last-child(1) {
-  flex-grow: 0.25;
-  margin-top: 50px;
-  column-span: 2;
-  max-width: 600px;
-}
-
-.about__item h3 {
-  text-align: center;
-  margin-bottom: 15px;
-}
-
-.about__item p {
-  text-align: justify;
-  font-family: "Ubuntu", sans-serif;
-  line-height: 20px;
-}
-
-@media (max-width: 1025px) {
+@media (max-width: 600px) {
   div#about__animation {
-    height: calc(100vh - 90px);
+    height: 50vh;
   }
-}
-
-@media (max-width: 780px) {
-  div#about__animation {
-    height: calc(100vh - 90px);
-  }
-  section#about {
+  div#about {
     padding: 0 20px;
+    margin-bottom: 30px;
+  }
+  div#about p {
+    font-size: 85%;
+    line-height: 140%;
+  }
+  div#about div#who_we_are {
+    margin-top: 20px;
+  }
+  div#about div#who_we_are h3 {
+    position: relative;
+    margin-bottom: 15px;
+  }
+  div#about div#who_we_are h3::before {
+    content: "";
+    position: absolute;
+    font-size: 20px;
+    width: 70%;
+    height: 7px;
+    background-color: #3535ee;
+    top: 110%;
+    left: -30px;
+  }
+  div#about div#when_it_began {
+    margin-top: 20px;
+  }
+  div#about div#when_it_began h3 {
+    position: relative;
+    margin-bottom: 20px;
+    padding-right: 30px;
+    text-align: right;
+  }
+  div#about div#when_it_began h3::after {
+    content: "";
+    position: absolute;
+    font-size: 20px;
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
+    background-color: #d8781e;
+    top: -20px;
+    right: -55px;
+  }
+  div#about div#mission {
+    margin-top: 20px;
+  }
+  div#about div#mission h3 {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 60px;
+  }
+  div#about div#mission h3::before {
+    content: "";
+    position: absolute;
+    font-size: 20px;
+    width: 80px;
+    height: 50px;
+    background-color: #078330;
+    top: -10px;
+    left: -30px;
   }
 }
-/*# sourceMappingURL=about.css.map */
