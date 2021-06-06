@@ -3,6 +3,9 @@
 
 main {
 	width: 100%;
+	margin-bottom: 30px;
+	overflow: hidden;
+
 }
 
 div#about__animation {
@@ -126,7 +129,6 @@ div#about__animation {
 	}
 	div#about {
 		padding: 0 20px;
-		margin-bottom: 30px;
 
 		p {
 			font-size: 85%;
@@ -134,7 +136,7 @@ div#about__animation {
 		}
 
 		div#who_we_are {
-			// border: 2px solid green;
+			border: 2px solid green;
 			margin-top: 20px;
 			h3 {
 				position: relative;
@@ -158,7 +160,7 @@ div#about__animation {
 
 		div#when_it_began {
 			margin-top: 20px;
-			// border: 2px solid green;
+			border: 2px solid green;
 
 			h3 {
 				position: relative;
@@ -184,11 +186,11 @@ div#about__animation {
 
 		div#mission {
 			margin-top: 20px;
-			// border: 2px solid green;
+			border: 2px solid green;
 
 			h3 {
 				position: relative;
-				margin-bottom: 20px;
+				margin-bottom: 25px;
 				padding-left: 60px;
 				// border: 2px solid green;
 

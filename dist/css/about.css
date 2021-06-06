@@ -546,6 +546,8 @@ div#social__media ul li:hover {
 
 main {
   width: 100%;
+  margin-bottom: 30px;
+  overflow: hidden;
 }
 
 div#about__animation {
@@ -565,13 +567,13 @@ div#about__animation img {
   }
   div#about {
     padding: 0 20px;
-    margin-bottom: 30px;
   }
   div#about p {
     font-size: 85%;
     line-height: 140%;
   }
   div#about div#who_we_are {
+    border: 2px solid green;
     margin-top: 20px;
   }
   div#about div#who_we_are h3 {
@@ -590,6 +592,7 @@ div#about__animation img {
   }
   div#about div#when_it_began {
     margin-top: 20px;
+    border: 2px solid green;
   }
   div#about div#when_it_began h3 {
     position: relative;
@@ -610,10 +613,11 @@ div#about__animation img {
   }
   div#about div#mission {
     margin-top: 20px;
+    border: 2px solid green;
   }
   div#about div#mission h3 {
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     padding-left: 60px;
   }
   div#about div#mission h3::before {
